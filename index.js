@@ -1,10 +1,10 @@
+require('dotenv').config()
 const express= require("express");
-
 const app = express()
 
 const data = require("./db.json")
 
-let port = process.env.port || 3000
+let port = process.env.port || 8080
 
 app.get("/", (req,res)=>{
     res.send("Hello");
